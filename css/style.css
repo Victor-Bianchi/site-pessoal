@@ -1,0 +1,40 @@
+div.menu {
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav.desktop ul {
+    list-style-type: none;
+}
+
+nav.desktop ul li {
+    margin-right: 30px;
+}
+
+nav.desktop ul li a {
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+nav.desktop ul li a:hover {
+    color: #3764ED;
+}
+
+/*MEDIA SCREEN (RESPONSIVE DESIGN)*/
+
+@media screen and (max-width: 1024px) {
+    div.menu {
+        display: block;
+        text-align: center;
+    }
+    
+    nav.desktop {
+        display: none;
+    }
+}
