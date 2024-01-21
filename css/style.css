@@ -115,6 +115,36 @@ div.card .image-side {
     background-color: #ccc;
 }
 
+/*COMPETÊNCIAS SECTION*/
+
+div.comp-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.comp-single {
+    width: calc((100% / 3) - 2%);
+    padding: 50px 50px 20px 50px;
+    background-color: #fff;
+    margin: 1%;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+div.comp-single .image {
+    background-color: #ccc;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+div.comp-single h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
 /*MEDIA SCREEN (RESPONSIVE DESIGN)*/
 
 @media screen and (max-width: 1024px) {
@@ -142,5 +172,29 @@ div.card .image-side {
 
     div.image-side {
         display: none;
+    }
+
+    div.comp-box {
+        display: block;
+    }
+
+    div.comp-single {
+        width: 60%;
+        margin: 50px auto;
+    }
+
+    div.comp-single .image {
+        background-color: #ccc;
+        height: 250px;
+        margin-bottom: 20px;
+        margin: 0px auto 20px auto;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.comp-single {
+        width: 100%;
+        margin: 50px auto;
     }
 }
