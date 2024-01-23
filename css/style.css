@@ -87,6 +87,7 @@ div.card {
     background-color: #fff;
     padding: 30px;
     justify-content: space-between;
+    align-items: center;
     margin: 60px 0px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
@@ -94,8 +95,6 @@ div.card {
 .right-card {
     text-align: right;
 }
-
-/*efeito de "pulo"*/
 
 div.card .text-side {
     width: 40%;
@@ -111,9 +110,16 @@ div.card .text-side p {
 
 div.card .image-side {
     width: 40%;
-    height: 200px;
-    background-color: #ccc;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
+
+.front {background-image: url(../assets/Open\ source-cuate.svg);}
+.back {background-image: url(../assets/Server-amico.svg);}
+.sc {background-image: url(../assets/Printed\ circuit\ board-cuate.svg);}
+.eng {background-image: url(../assets/Software\ engineer-bro.svg);}
 
 /*COMPETÊNCIAS SECTION*/
 
@@ -135,10 +141,19 @@ div.comp-single {
 }
 
 div.comp-single .image {
-    background-color: #ccc;
     height: 250px;
     margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
+
+.html {background-image: url(../assets/icons8-html5-500.png);}
+.css {background-image: url(../assets/icons8-css3-500.png);}
+.js {background-image: url(../assets/icons8-javascript-500.png);}
+.php {background-image: url(../assets/icons8-logo-php-500.png);}
+.mysql {background-image: url(../assets/icons8-maria-db-480.png);}
+.nodejs {background-image: url(../assets/icons8-nó-js-500.png);}
 
 div.comp-single h3 {
     font-weight: bold;
@@ -297,7 +312,6 @@ footer > div.container {
     }
 
     div.comp-single .image {
-        background-color: #ccc;
         height: 250px;
         margin-bottom: 20px;
         margin: 0px auto 20px auto;
