@@ -263,14 +263,23 @@ footer h1.logo {
 
 footer p {
     color: white;
-    font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 footer > div.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+footer p.attr {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+footer a {
+    color: white;
 }
 
 /*MEDIA SCREEN (RESPONSIVE DESIGN)*/
