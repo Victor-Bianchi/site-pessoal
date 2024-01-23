@@ -15,10 +15,6 @@ html, body {
     font-size: 16px;
 }
 
-.left {float: left;}
-.right {float: right;}
-.clear {clear: both;}
-
 .blue {color: #3764ED;}
 
 .container {

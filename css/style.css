@@ -87,6 +87,7 @@ div.card {
     background-color: #fff;
     padding: 30px;
     justify-content: space-between;
+    align-items: center;
     margin: 60px 0px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
@@ -94,8 +95,6 @@ div.card {
 .right-card {
     text-align: right;
 }
-
-/*efeito de "pulo"*/
 
 div.card .text-side {
     width: 40%;
@@ -111,9 +110,16 @@ div.card .text-side p {
 
 div.card .image-side {
     width: 40%;
-    height: 200px;
-    background-color: #ccc;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
+
+.front {background-image: url(../assets/Open\ source-cuate.svg);}
+.back {background-image: url(../assets/Server-amico.svg);}
+.sc {background-image: url(../assets/Printed\ circuit\ board-cuate.svg);}
+.eng {background-image: url(../assets/Software\ engineer-bro.svg);}
 
 /*COMPETÊNCIAS SECTION*/
 
@@ -135,14 +141,145 @@ div.comp-single {
 }
 
 div.comp-single .image {
-    background-color: #ccc;
     height: 250px;
     margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
+
+.html {background-image: url(../assets/icons8-html5-500.png);}
+.css {background-image: url(../assets/icons8-css3-500.png);}
+.js {background-image: url(../assets/icons8-javascript-500.png);}
+.php {background-image: url(../assets/icons8-logo-php-500.png);}
+.mysql {background-image: url(../assets/icons8-maria-db-480.png);}
+.nodejs {background-image: url(../assets/icons8-nó-js-500.png);}
 
 div.comp-single h3 {
     font-weight: bold;
     text-align: center;
+}
+
+/*CONTATO SECTION*/
+
+div.box-contato {
+    display: flex;
+    align-items: top;
+    padding: 30px 40px;
+    margin: 60px 0px;
+    background-color: #fff;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+div.box-contato .image-side {
+    width: 50%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/eu.png);
+}
+
+div.box-contato .info-side {
+    width: 45%;
+}
+
+div.box-contato .info-side .top {
+    border-bottom: 2px solid #3764ED;
+    padding-bottom: 100px;
+}
+
+div.box-contato .info-side .top h1 {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+div.box-contato .info-side .top h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+div.box-contato .info-side .top p {
+    margin-bottom: 30px;
+}
+
+div.social {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.social .medias {
+    display: flex;
+    width: calc(100% / 2); /*33,333*/
+}
+
+div.social .medias > div {
+    width: 100%;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-image: url(../assets/icons8-linkedin-100\ full.png);
+}
+
+div.social .medias .github {
+    background-image: url(../assets/icons8-github-100.png)
+}
+
+div.social .medias .whatsapp {
+    background-image: url(../assets/icons8-whatsapp-100.png)
+}
+
+div.social .button {
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    background-color: #3764ED;
+    box-shadow: 0px 4px 10px 0px #3764ED;
+}
+
+div.social .button a {
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    padding: 40px;
+    background-color: #3764ED;
+}
+
+footer h1.logo {
+    color: white;
+}
+
+footer p {
+    color: white;
+    font-size: 0.8rem;
+}
+
+footer > div.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p.attr {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+footer a {
+    color: white;
 }
 
 /*MEDIA SCREEN (RESPONSIVE DESIGN)*/
@@ -184,11 +321,31 @@ div.comp-single h3 {
     }
 
     div.comp-single .image {
-        background-color: #ccc;
         height: 250px;
         margin-bottom: 20px;
         margin: 0px auto 20px auto;
         max-width: 500px;
+    }
+
+    div.box-contato {
+        display: block;
+        text-align: center;
+    }
+
+    div.box-contato .image-side {
+        display: none;
+    }
+
+    div.box-contato .info-side {
+        width: 100%;
+    }
+
+    div.social {
+        width: 100%;
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -196,5 +353,34 @@ div.comp-single h3 {
     div.comp-single {
         width: 100%;
         margin: 50px auto;
+    }
+
+    div.social {
+        display: block;
+    }
+
+    div.social .medias {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 60px 0px;
+    }
+
+    div.social .medias > div {
+        background-position: center;
+    }
+
+    div.social .button {
+        width: 100%;
+    }
+
+    footer div.container {
+        text-align: center;
+        display: block;
+    }
+
+    footer h1 {
+        margin-bottom: 30px;
     }
 }
